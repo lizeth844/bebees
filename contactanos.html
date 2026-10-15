@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pequeños Sueños | Contáctanos</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">Pequeños <span>Sueños</span> 👶</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="portafolio.html">Catálogo</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="contactanos.html" class="active">Contáctanos</a></li>
+    </ul>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <h1>Escríbenos o Visítanos</h1>
+    <p>Estamos complacidos de resolver tus dudas y ayudarte en tus compras.</p>
+  </header>
+
+  <section class="section">
+    <div class="container grid grid-2">
+      
+      <!-- Formulario -->
+      <div style="background: var(--bg-soft); padding: 2.5rem; border-radius: 20px; border: 2px solid var(--border-color);">
+        <h2 style="font-family: 'Fredoka', cursive; color: var(--primary); margin-bottom: 1.5rem;">Envíanos un Mensaje</h2>
+        
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" class="form-control" required placeholder="Ej. Camila Torres">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" class="form-control" required placeholder="tu@correo.com">
+          </div>
+
+          <div class="form-group">
+            <label for="asunto">Motivo de Contacto</label>
+            <select id="asunto" class="form-control" required>
+              <option value="Consulta sobre Productos">Consulta sobre Productos</option>
+              <option value="Crear Lista de Baby Shower">Crear Lista de Baby Shower</option>
+              <option value="Servicio de Personalización">Servicio de Personalización</option>
+              <option value="Envíos y Domicilios">Envíos y Domicilios</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" class="form-control" rows="4" placeholder="Escribe aquí tu consulta..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar Mensaje</button>
+        </form>
+      </div>
+
+      <!-- Datos de contacto -->
+      <div>
+        <h2 style="font-family: 'Fredoka', cursive; color: var(--primary); margin-bottom: 1.5rem;">Puntos de Atención</h2>
+        <p style="margin-bottom: 1.5rem;">Visita nuestro Showroom o contáctate con nuestro equipo de atención online.</p>
+        
+        <div style="margin-bottom: 2rem; line-height: 2;">
+          <p>📍 <strong>Dirección:</strong> Av. Infantil #45-12, Sector Primavera</p>
+          <p>📞 <strong>Teléfono / WhatsApp:</strong> +57 300 123 4567</p>
+          <p>✉️ <strong>Correo:</strong> contacto@pequenossuenos.com</p>
+          <p>⏰ <strong>Horarios:</strong> Lun-Sáb (9am - 7pm) | Dom (10am - 4pm)</p>
+        </div>
+
+        <div style="width: 100%; height: 230px; background: #e0f2fe; border-radius: 20px; display: flex; align-items: center; justify-content: center; border: 2px dashed var(--secondary); color: #0284c7; font-weight: 500;">
+          📍 [Ubicación Interactiva de la Tienda]
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Modal de confirmación -->
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <h3>¡Mensaje Enviado! 👶</h3>
+      <p id="modalMessage">Gracias por escribir a Pequeños Sueños.</p>
+      <button class="btn btn-primary" onclick="closeModal()" style="margin-top: 1rem;">Aceptar</button>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-col">
+        <h3>Pequeños <span>Sueños</span></h3>
+        <p>Acompañándote en la aventura más hermosa: el crecimiento de tu bebé.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Horario de Atención</h4>
+        <p>Lun - Sáb: 9:00 AM - 7:00 PM</p>
+        <p>Domingos: 10:00 AM - 4:00 PM</p>
+      </div>
+      <div class="footer-col">
+        <h4>Ubicación</h4>
+        <p>Av. Infantil #45-12, Sector Primavera</p>
+        <p>Tel / WhatsApp: +57 300 123 4567</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Pequeños Sueños. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
